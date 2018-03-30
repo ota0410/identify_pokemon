@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-
 """feature detection."""
 
 import sys
 import cv2
+import num2name
 import os
 
 args = sys.argv
@@ -46,6 +46,8 @@ for file in files:
         if ret < minimum:
                 name = file
                 minimum = ret
-print("")
 print(" ----------prediction----------")
-print(name,minimum)
+#print(name,minimum)
+Id = name.split('.')
+print(num2name.data[Id[0]])
+
