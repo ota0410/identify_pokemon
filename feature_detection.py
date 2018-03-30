@@ -12,7 +12,7 @@ TARGET_FILE = args[1]
 IMG_DIR = os.path.abspath(os.path.dirname(__file__))+'/pic/'
 IMG_SIZE = (200,200)
 
-target_img_path = IMG_DIR + TARGET_FILE
+target_img_path = TARGET_FILE
 target_img = cv2.imread(target_img_path, cv2.IMREAD_GRAYSCALE)
 target_img = cv2.resize(target_img, IMG_SIZE)
 
